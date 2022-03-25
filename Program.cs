@@ -41,10 +41,12 @@ namespace Blog
                 //     Console.WriteLine(tag.Name);
                 // }
 
-                var tag = context.Tags
-                .AsNoTracking()
-                .FirstOrDefault(x => x.Id == 5);
-                Console.WriteLine(tag?.Name);
+                // var tag = context.Tags
+                // .AsNoTracking()
+                // .FirstOrDefault(x => x.Id == 5);
+                // Console.WriteLine(tag?.Name);
+
+                // Or use Single 
 
            }
 

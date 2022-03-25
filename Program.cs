@@ -2,7 +2,7 @@
 using System.Linq;
 using Blog.Data;
 using Blog.Models;
-
+using Microsoft.EntityFrameworkCore;
 
 namespace Blog
 {
@@ -31,6 +31,20 @@ namespace Blog
                 // context.Remove(tag);
                 // context.SaveChanges();
 
+                // Search
+                // var tags = context.Tags
+                // .Where(x=> x.Name.Contains("Core"))
+                // .ToList();
+
+                // foreach (var tag in tags)
+                // {
+                //     Console.WriteLine(tag.Name);
+                // }
+
+                var tag = context.Tags
+                .AsNoTracking()
+                .FirstOrDefault(x => x.Id == 5);
+                Console.WriteLine(tag?.Name);
 
            }
 

@@ -13,9 +13,9 @@ namespace Blog
            {
 
                // Create
-               var tag = new Tag{ Name="ASP.NET", Slug="aspnet"};
-               context.Tags.Add(tag);
-               context.SaveChanges();
+              // var tag = new Tag{ Name="ASP.NET", Slug="aspnet"};
+              //   context.Tags.Add(tag);
+              //   context.SaveChanges();
 
                 
 

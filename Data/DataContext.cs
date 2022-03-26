@@ -17,7 +17,7 @@ namespace Blog.Data
 
         protected override void OnConfiguring(DbContextOptionsBuilder option)
         {
-            option.UseSqlServer("Server=localhost,1433;Database=Blog;User ID=SA;Password=1q2w3e4r@#$");
+            option.UseSqlServer("Server=localhost,1433;Database=FluentBlog;User ID=SA;Password=1q2w3e4r@#$");
         }
     }
 }
